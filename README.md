@@ -14,7 +14,7 @@ This project aims to reproduce the core capabilities of Meta AI's **Segment Anyt
 We successfully:
 1.  **Reproduced** the "Promptable Segmentation" task (Points, Boxes, and Automatic Mode) using the official ViT-H model.
 2.  **Optimized** the model via Parameter-Efficient Fine-Tuning (PEFT) on the COCO dataset to improve the efficiency-accuracy trade-off of the lightweight ViT-B model.
-3.  **Extended** the architecture with a **"Grounded-SAM"** pipeline, enabling text-based prompting (e.g., "segment the wheels") by integrating GroundingDINO.
+3.  **Extended** the architecture with a **"Grounded-SAM"** pipeline, enabling text-based prompting (e.g., "a wheel") by integrating GroundingDINO.
 
 ---
 
