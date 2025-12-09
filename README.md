@@ -26,7 +26,7 @@ The project is organized into three main notebooks:
 | :--- | :--- |
 | `01_SAM_Reproduction.ipynb` | **Core Reproduction:** Verifies Point prompts, Box prompts, Ambiguity awareness (multi-mask output), and Zero-Shot "Segment Everything" mode. Includes interactive Gradio demos. |
 | `02_SAM_FineTuning.ipynb` | **Optimization:** Implements a training loop to fine-tune the lightweight `ViT-B` decoder on a subset of the COCO 2017 dataset, improving segmentation quality on complex objects. |
-| `03_SAM_Extension_Text.ipynb` | **Extension 2 (Novelty):** Implements the **Text-to-Mask** pipeline. Connects Hugging Face's `GroundingDINO` (Semantic Detector) with SAM (Geometric Segmenter) to allow natural language queries. |
+| `03_SAM_Extension_Text.ipynb` | **Extension (Novelty):** Implements the **Text-to-Mask** pipeline. Connects Hugging Face's `GroundingDINO` (Semantic Detector) with SAM (Geometric Segmenter) to allow natural language queries. |
 
 ---
 
