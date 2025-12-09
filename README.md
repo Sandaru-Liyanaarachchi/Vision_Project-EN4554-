@@ -44,3 +44,19 @@ This project is designed to run on **Google Colab** (T4 GPU recommended).
 pip install git+[https://github.com/facebookresearch/segment-anything.git](https://github.com/facebookresearch/segment-anything.git)
 pip install transformers accelerate supervision gradio jupyter_bbox_widget
 pip install opencv-python pycocotools matplotlib onnxruntime
+```
+
+### Fine-Tuning (ViT-B)
+We froze the heavy Image Encoder and fine-tuned the Mask Decoder on 500 images from COCO 2017.
+
+### Grounded-SAM (Text-to-Mask)
+Since the official SAM repository does not release text-encoder weights, we built a pipeline using **GroundingDINO**.
+
+* **Input:** Text prompt "wheel"
+* **Output:** Precise binary masks of vehicle tires.
+* **Significance:** Bridges the gap between semantic understanding and geometric segmentation.
+
+## 📜 Acknowledgements
+* **Original Paper:** [Kirillov et al., "Segment Anything", ICCV 2023](https://arxiv.org/abs/2304.02643)
+* **Official Repository:** [facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)
+* **GroundingDINO:** [IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
